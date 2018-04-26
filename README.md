@@ -1,4 +1,4 @@
-## Intro
+## Intro  
 This is Flora's Repo for ROP299 project. 
   
 The Repo contains following scripts:  
@@ -16,7 +16,7 @@ The Repo contains following scripts:
 	* Contains scripts for enumerating parsed elements implemented in R
 	* `/Analyser/analyse.R` takes in 
 
-##Utils
+ ##Utils  
  * For downloading the Repo, copy the following command into the command line  
 ```git clone https://github.com/floraliu1011/ROP299.git```
  **[git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) needs to be installed in order to run this command**  
@@ -36,7 +36,7 @@ The Repo contains following scripts:
 To change the behavior of the parser, change the funcitons in `Script/Parser/utils.py`. As long as the functionality of `parse` is preserved  
 To modify the submission file, modify the `setup.sh`
 
-##Potential Bugs & Attention
+ ##Potential Bugs & Attention
 
 1. The submission files (`submission`) assembled by `setup.sh` might contain line break inside job commands.  
 For example:  
@@ -48,7 +48,7 @@ might leads to early abortion.
 Please ensure the line breaks are removed inside each job command.
 2. The file is preferably been split into a multiple of 16 to obtain better use of the computation power
 
-##Further reading
+ ##Further reading
 
 * [Scinet User tutorial](https://wiki.scinet.utoronto.ca/wiki/images/5/54/SciNet_Tutorial.pdf)
 * [Scinet Wiki](https://wiki.scinet.utoronto.ca/wiki/index.php/SciNet_User_Support_Library)
