@@ -1,5 +1,6 @@
 #!/bin/bash
-set -e
+set -e #abort the process if encountered error
+# check cmdline args
 if test $# -ne 3
 then
 	echo "Usage: $0 <path_to_forward_file> <path_to_reverse_file> num_split"
@@ -53,7 +54,7 @@ mv ${forward_name}* Intermediate
 mv ${reverse_name}* Intermediate
 
 # make the submission file
-cat > submission <<EOF
+cat > submission <<\EOF
 #!/bin/bash
 #PBS -l nodes=1:ppn=8,walltime=6:00:00
 #PBS -o output.out
@@ -62,7 +63,7 @@ cat > submission <<EOF
 module load intel/15.0.2
 module load python/3.5.1
 
-cd \$PBS_O_WORKDIR
+cd $PBS_O_WORKDIR
 EOF
 ((max=$num_split - 1))
 for i in `seq -w 00 $max`
