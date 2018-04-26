@@ -18,8 +18,8 @@ The Repo contains following scripts:
 
 ## Utils  
  * For downloading the Repo, copy the following command into the command line  
-```git clone https://github.com/floraliu1011/ROP299.git```
- **[git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) needs to be installed in order to run this command**  
+```git clone https://github.com/floraliu1011/ROP299.git```  
+ **Note that [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) needs to be installed in order to run this command**  
  
 * Move the Repo, as well as the sequencing result, to the scratch folder. Make sure that the forward read file and and reverse read file is located in the same directory as `setup.sh` and `/Script`. Run the following command to invoke the building process:  
 ```sh setup.sh <path_to_forward_read> <path_to_reverse_read> [num_split]```
