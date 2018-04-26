@@ -36,7 +36,7 @@ The Repo contains following scripts:
 To change the behavior of the parser, change the funcitons in `Script/Parser/utils.py`. As long as the functionality of `parse` is preserved  
 To modify the submission file, modify the `setup.sh`
 
- ##Potential Bugs & Attention
+## Potential Bugs & Attention
 
 1. The submission files (`submission`) assembled by `setup.sh` might contain line break inside job commands.  
 For example:  
@@ -46,6 +46,7 @@ file_B file_C)&
 ```  
 might leads to early abortion.  
 Please ensure the line breaks are removed inside each job command.
+3. The entire workflow haven been fully tested, though each individual script were tested.
 2. The file is preferably been split into a multiple of 16 to obtain better use of the computation power
 
 ## Further reading
